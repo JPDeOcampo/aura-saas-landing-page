@@ -27,11 +27,11 @@ const HeroSection = () => {
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight tracking-tight">
             <span className="bg-linear-to-r from-zinc-900 via-zinc-700 to-zinc-500 dark:from-white dark:via-zinc-300 dark:to-zinc-500 bg-clip-text text-transparent">
-              Transform Ideas with
+              Turn Raw Thoughts into 
             </span>
             <br />
             <span className="bg-linear-to-r from-purple-600 via-blue-600 to-cyan-600 dark:from-purple-400 dark:via-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
-              AI Intelligence
+              Polished Reality
             </span>
           </h1>
 

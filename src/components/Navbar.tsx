@@ -8,6 +8,7 @@ const Navbar = () => {
     "hover:text-purple-600 dark:hover:text-purple-400 transition-colors";
 
   const menuItems = [
+    { label: "Pricing", path: "#pricing" },
     { label: "How It Works", path: "#how-it-works" },
     { label: "Features", path: "#features" },
     { label: "Results", path: "#comparison" },
@@ -25,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 md:px-0 h-16 flex items-center justify-between">
         <a
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => {
@@ -37,7 +38,7 @@ const Navbar = () => {
             <Sparkles className="w-5 h-5 text-white" />
           </div>
           <span className="font-bold text-xl dark:text-white text-zinc-900 tracking-tight">
-            AI Sass
+            AURA
           </span>
         </a>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600 dark:text-zinc-400">
@@ -51,7 +52,8 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        {getStartedButton()}
+        <div className="hidden md:block"> {getStartedButton()}</div>
+
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden p-2"

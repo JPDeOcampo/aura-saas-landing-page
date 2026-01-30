@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import SectionHeader from "./ui/SectionHeader";
 import FeatureCard from "./ui/FeaturedCard";
 import { features } from "../constant/Feature";
 
@@ -13,12 +14,10 @@ const FeatureSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent">
-            Why Choose AI Enhance?
-          </h2>
-          <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-            Built with cutting-edge technology to deliver unparalleled results
-          </p>
+          <SectionHeader
+            header="Why Choose AURA?"
+            desc="Built with cutting-edge technology to deliver unparalleled results"
+          />
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (

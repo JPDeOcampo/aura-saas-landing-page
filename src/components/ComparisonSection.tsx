@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Sparkles, Zap, MessageSquare } from "lucide-react";
-import { fadeInUp } from "../utils/motion";
+import SectionHeader from "./ui/SectionHeader";
 
 const ComparisonSection = () => {
   return (
@@ -9,20 +9,10 @@ const ComparisonSection = () => {
       className="py-24 px-6 bg-zinc-50/50 dark:bg-zinc-900/20"
     >
       <div className="max-w-5xl mx-auto">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-          className="text-center mb-16"
-        >
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 dark:text-white text-zinc-900">
-            See the Difference
-          </h2>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Watch as raw notes turn into professional copy instantly.
-          </p>
-        </motion.div>
+        <SectionHeader
+          header="See the Difference"
+          desc=" Watch as raw notes turn into professional copy instantly."
+        />
 
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
           <motion.div

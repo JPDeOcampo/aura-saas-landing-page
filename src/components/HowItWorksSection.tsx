@@ -1,3 +1,5 @@
+import SectionHeader from "./ui/SectionHeader";
+
 const HowItWorksSection = () => {
   return (
     <section
@@ -5,14 +7,10 @@ const HowItWorksSection = () => {
       className="py-24 px-6 border-y border-zinc-100 dark:border-zinc-900"
     >
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 dark:text-white text-zinc-900">
-            Three Steps to Perfection
-          </h2>
-          <p className="text-zinc-600 dark:text-zinc-400">
-            From messy drafts to professional masterpieces.
-          </p>
-        </div>
+        <SectionHeader
+          header="Three Steps to Perfection"
+          desc="From messy drafts to professional masterpieces."
+        />
         <div className="grid md:grid-cols-3 gap-12">
           {[
             {
