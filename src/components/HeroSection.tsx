@@ -1,14 +1,13 @@
-import { useState } from "react";
 import { motion } from "motion/react";
-import { Zap, History } from "lucide-react";
+import { Zap } from "lucide-react";
 import { fadeInUp } from "../utils/motion";
 import PromptInput from "./ui/PromptInput";
 import AIResponse from "./ui/AIResponse";
 import ComparisonView from "./ui/ComaprisonView";
-import HistorySidebar from "./ui/HistorySidebar";
+// import HistorySidebar from "./ui/HistorySidebar";
 
 const HeroSection = () => {
-  const [isHistoryOpen, setIsHistoryOpen] = useState(false);
+  // const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   return (
     <section className="pt-32 pb-20 px-6 overflow-hidden min-h-screen">
       <div className="max-w-7xl mx-auto text-center relative">

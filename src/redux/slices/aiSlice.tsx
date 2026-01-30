@@ -48,8 +48,9 @@ export const generateAIResponse = createAsyncThunk(
       });
 
       return simulateAI(prompt);
-    } catch (err: any) {
-      return rejectWithValue(err.message || "Failed to connect to AI engine");
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message : "Failed to connect to AI engine";
+      return rejectWithValue(errorMessage);
     }
   },
 );
