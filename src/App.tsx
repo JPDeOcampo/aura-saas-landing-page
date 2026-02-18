@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Sparkles } from "lucide-react";
+import LogoButton from "./components/ui/LogoButton";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import PricingSection from "./components/PricingSection";
@@ -57,20 +57,7 @@ const App = () => {
       <footer className="relative py-6 px-6 border-t border-zinc-100 dark:border-zinc-900 z-50">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="flex items-center gap-2">
-            <a
-              className="flex items-center gap-2 cursor-pointer"
-              onClick={() => {
-                window.scrollTo(0, 0);
-                window.history.pushState(null, "", "/");
-              }}
-            >
-              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-white" />
-              </div>
-              <span className="font-bold text-xl dark:text-white text-zinc-900 tracking-tight">
-                AURA
-              </span>
-            </a>
+            <LogoButton />
           </div>
           <div>
             <p className="text-zinc-500 dark:text-zinc-500 text-sm">

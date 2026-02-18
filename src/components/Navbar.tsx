@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Sparkles, X, Menu } from "lucide-react";
+import { X, Menu } from "lucide-react";
+import LogoButton from "./ui/LogoButton";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,20 +28,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="max-w-7xl mx-auto px-6 md:px-0 h-16 flex items-center justify-between">
-        <a
-          className="flex items-center gap-2 cursor-pointer"
-          onClick={() => {
-            window.scrollTo(0, 0);
-            window.history.pushState(null, "", "/");
-          }}
-        >
-          <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-            <Sparkles className="w-5 h-5 text-white" />
-          </div>
-          <span className="font-bold text-xl dark:text-white text-zinc-900 tracking-tight">
-            AURA
-          </span>
-        </a>
+        <LogoButton />
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-600 dark:text-zinc-400">
           <ul className="flex gap-4">
             {menuItems.map((item) => (

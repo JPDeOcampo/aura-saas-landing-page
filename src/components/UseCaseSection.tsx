@@ -32,12 +32,12 @@ const UseCaseSection = () => {
                   key={i}
                   className="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 hover:border-purple-500/50 transition-colors"
                 >
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-center gap-4">
                     <CheckCircle2 className="w-6 h-6 text-purple-600 shrink-0" />
                     <div>
-                      <h4 className="font-bold dark:text-white text-zinc-900">
+                      <h3 className="font-bold dark:text-white text-zinc-900">
                         {useCase.title}
-                      </h4>
+                      </h3>
                       <p className="text-zinc-600 dark:text-zinc-400 text-sm">
                         {useCase.text}
                       </p>
