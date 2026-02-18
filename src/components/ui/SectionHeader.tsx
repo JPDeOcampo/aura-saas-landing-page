@@ -6,7 +6,7 @@ const SectionHeader = ({ header, desc }: { header: string; desc: string }) => {
     <motion.div
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.1 }}
+      viewport={{ once: true }}
       variants={fadeInUp}
       className="text-center mb-24"
     >

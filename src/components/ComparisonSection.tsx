@@ -25,7 +25,7 @@ const ComparisonSection = () => {
                 Your Input
               </span>
             </div>
-            <p className="text-zinc-500 italic dark:text-zinc-500">
+            <p className="text-zinc-500 italic dark:text-zinc-400">
               "hey team i think we need to like change the way we do our
               marketing because it is too slow and i want more users by next
               month maybe use ai?"
